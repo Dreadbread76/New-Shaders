@@ -38,18 +38,19 @@ Material:
     m_Floats:
     - _FlowOffset: -0.61
     - _FlowStrength: -0.05
-    - _Glossiness: 0.696
-    - _HeightScale: 0.25
-    - _HeightScaleModulated: 0.39
-    - _Metallic: 0.105
+    - _Glossiness: 0.753
+    - _HeightScale: 0.3
+    - _HeightScaleModulated: 0.59
+    - _Metallic: 0.877
+    - _RefractionStrength: 0.209
     - _Speed: 0.63
     - _Tiling: 1.55
     - _UJump: 0.25
     - _VJump: 0.25
-    - _WaterFogDensity: 0.15
+    - _WaterFogDensity: 0.74
     m_Colors:
     - _Color: {r: 0.45490193, g: 0.68089044, b: 1, a: 0.5372549}
-    - _WaterFogColor: {r: 0.14117646, g: 0.4516649, b: 0.6313726, a: 0}
+    - _WaterFogColor: {r: 0.1641509, g: 0.77710694, b: 1, a: 0}
     - _WaterFogColour: {r: 0, g: 0.15369797, b: 1, a: 1}
     - _WaterFogDensity: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

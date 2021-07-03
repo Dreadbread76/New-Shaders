@@ -65,13 +65,13 @@ Shader "Unlit/Caustics"
                 fixed r = tex2D(_CausticsTex, uv1 + fixed2(+s,+s)).r;
                 fixed g = tex2D(_CausticsTex, uv1 + fixed2(+s,-s)).g;
                 fixed b = tex2D(_CausticsTex, uv1 + fixed2(-s,-s)).b;
-                fixed3 caustics1 = fixed3(r,g,b);
+                fixed3 caustics1 = fixed3(r,g,b) * 2;
 
                 s = _SplitRGB;
                 r = tex2D(_CausticsTex, uv2 + fixed2(+s,+s)).r;
                 g = tex2D(_CausticsTex, uv2 + fixed2(+s,-s)).g;
                 b = tex2D(_CausticsTex, uv2 + fixed2(-s,-s)).b;
-                fixed3 caustics2 = fixed3(r,g,b);
+                fixed3 caustics2 = fixed3(r,g,b) * 2;
 
                 
                 //fixed3 caustics1 = tex2D(_CausticsTex, uv1).rgb;

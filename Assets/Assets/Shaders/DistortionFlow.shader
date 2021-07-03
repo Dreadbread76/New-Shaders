@@ -20,6 +20,7 @@ Shader "Custom/DistortionFlow"
         
         _WaterFogColor("Water Fog Colour", Color) = (0,0,0,0)
         _WaterFogDensity("Water Fog Density", Range(0,2)) = 0.5
+        _RefractionStrength("Refraction Strength", Range(0,1)) = 0.25
         
     }
     SubShader
@@ -107,7 +108,7 @@ Shader "Custom/DistortionFlow"
            // o.Albedo = ColorBelowWater(IN.screenPos);
            // o.Alpha = 0.1;
 
-            o.Emission = ColorBelowWater(IN.screenPos) * (1-c.a);
+            o.Emission = ColorBelowWater(IN.screenPos, o.Normal) * (1-c.a);
         }
         ENDCG
     }
